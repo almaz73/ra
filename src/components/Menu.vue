@@ -1,10 +1,14 @@
 <template>
   <div class="menu" :class="{open: isMenu}" @click="closeWindow()">
     <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link to="/aboutVue">AboutVue</router-link>
-    <router-link to="/example_1">Пример 1</router-link>
-    <router-link to="/example_2">Пример 2</router-link>
+    <router-link to="/aboutVue">install Vue</router-link>
+    <router-link to="/example_1">Example</router-link>
+    <router-link to="/links">Способы передачи данных</router-link>
+    <div class="inline">
+      <router-link to="/map">Color1</router-link>
+      <router-link to="/map2">Color2</router-link>
+      <router-link to="/map3">Color3</router-link>
+    </div>
   </div>
 </template>
 
