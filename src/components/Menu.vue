@@ -4,10 +4,11 @@
     <router-link to="/aboutVue">install Vue</router-link>
     <router-link to="/example_1">Example</router-link>
     <router-link to="/links">Способы передачи данных</router-link>
-    <div class="inline">
-      <router-link to="/map">Color1</router-link>
-      <router-link to="/map2">Color2</router-link>
-      <router-link to="/map3">Color3</router-link>
+    <div class="inline" style="margin-left: 20px">
+      <button @click="$store.dispatch('setColor', 'green')">green</button>
+      <button @click="$store.dispatch('setColor', 'red')">red</button>
+      <button @click="$store.dispatch('setColor', 'blue')">blue</button>
+      <button @click="$store.dispatch('setColor', 'black')">black</button>
     </div>
   </div>
 </template>

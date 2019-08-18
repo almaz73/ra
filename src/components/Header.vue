@@ -1,7 +1,8 @@
 <template>
-  <div class="head">
+  <div class="head" :style="{'background':this.$store.state.color}">
     <a @click="isOpen=!isOpen">Меню</a>
     <Menu :isOpen="isOpen" />
+    {{$store.state.color}}
   </div>
 </template>
 
