@@ -2,6 +2,7 @@
   <div class="menu" :class="{open: isMenu}" @click="closeWindow()">
     <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
+    <router-link to="/aboutVue">AboutVue</router-link>
     <router-link to="/example_1">Пример 1</router-link>
     <router-link to="/example_2">Пример 2</router-link>
   </div>
