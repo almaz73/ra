@@ -1,8 +1,6 @@
 let template = `
     <div>
-        <button @click='click()'>
-            77777
-        </button>
+        <div class='dd' v-for='data in datas'>{{data}}</div>
     </div>
 `
 
@@ -14,7 +12,7 @@ function init () {
         template: template,
         data() {
             return {
-                datas:[]
+                datas:["www",'2222', '33333',44, '232323']
             }
         },
         computed: {
@@ -38,7 +36,6 @@ function init () {
 
         },
         mounted() {
-            
         }
     });
 
